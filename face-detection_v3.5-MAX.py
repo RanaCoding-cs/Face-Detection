@@ -606,17 +606,17 @@ def print_banner():
       else f"{C.B_RED}[ STOPPED ]{C.RESET}"
   )
   banner = f"""
-{C.B_CYAN}╔═════════════════════════════════════════════════════════════════════╗{C.RESET}
-{C.B_CYAN}║{C.RESET} {C.B_GREEN}██████╗ ███████╗████████╗███████╗██████╗████████╗    ██████╗ ██████╗ {C.B_CYAN}║{C.RESET}
-{C.B_CYAN}║{C.RESET} {C.B_GREEN}██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝    ██╔══██╗██╔══██╗{C.B_CYAN}║{C.RESET}
-{C.B_CYAN}║{C.RESET} {C.B_GREEN}██║  ██║█████╗     ██║   █████╗  ██║        ██║       ██████╔╝██║  ██║{C.B_CYAN}║{C.RESET}
-{C.B_CYAN}║{C.RESET} {C.B_GREEN}██║  ██║██╔══╝     ██║   ██╔══╝  ██║        ██║       ██╔═══╝ ██║  ██║{C.B_CYAN}║{C.RESET}
-{C.B_CYAN}║{C.RESET} {C.B_GREEN}██████╔╝███████╗   ██║   ███████╗╚██████╗   ██║       ██║     ██████╔╝{C.B_CYAN}║{C.RESET}
-{C.B_CYAN}║{C.RESET} {C.B_GREEN}╚═════╝ ╚══════╝   ╚═╝   ╚══════╝ ╚═════╝   ╚═╝       ╚═╝     ╚═════╝ {C.B_CYAN}║{C.RESET}
-{C.B_CYAN}╠═════════════════════════════════════════════════════════════════════╣{C.RESET}
-{C.B_CYAN}║{C.RESET} {C.B_YELLOW}[+] Status                  :{C.RESET} {server_status:<43} {C.B_CYAN}║{C.RESET}
-{C.B_CYAN}║{C.RESET} {C.B_YELLOW}[+] Mode                    :{C.RESET} {C.B_GREEN}Auto-Sized Object Lock & Motion Tracker{C.RESET}{C.B_CYAN}║{C.RESET}
-{C.B_CYAN}╚═════════════════════════════════════════════════════════════════════╝{C.RESET}
+{C.B_CYAN}╔═════════════════════════════════════════════════════════════╗{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_GREEN}     ██████╗ ███████╗████████╗███████╗ ██████╗████████╗     {C.B_CYAN}║{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_GREEN}     ██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝     {C.B_CYAN}║{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_GREEN}     ██║  ██║█████╗     ██║   █████╗  ██║        ██║        {C.B_CYAN}║{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_GREEN}     ██║  ██║██╔══╝     ██║   ██╔══╝  ██║        ██║        {C.B_CYAN}║{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_GREEN}     ██████╔╝███████╗   ██║   ███████╗╚██████╗   ██║        {C.B_CYAN}║{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_GREEN}     ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝ ╚═════╝   ╚═╝        {C.B_CYAN}║{C.RESET}
+{C.B_CYAN}╠═════════════════════════════════════════════════════════════╣{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_YELLOW}[+] Status         :{C.RESET} {server_status:<43}       {C.B_CYAN}║{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_YELLOW}[+] Mode           :{C.RESET} {C.B_GREEN}Auto-Sized Object Lock & Motion Tracker{C.RESET}{C.B_CYAN}║{C.RESET}
+{C.B_CYAN}╚═════════════════════════════════════════════════════════════╝{C.RESET}
 """
   print(banner)
 
