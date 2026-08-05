@@ -57,7 +57,12 @@ cyber-vision-tool/
 Make sure you have Python installed along with the required libraries:
 
 ```bash
-pip install opencv-python numpy
+# Termux Packages
+pkg update && pkg upgrade -y
+pkg install python opencv-python clang -y
+
+# Python Pip Libraries
+pip install numpy
 ```
 ​Note: You will need the MobileNet-SSD model files (MobileNetSSD_deploy.prototxt and MobileNetSSD_deploy.caffemodel) in the same directory for the AI detection engine to run.
 ## 📦 Installation & Setup
