@@ -1,12 +1,40 @@
-# Cyber Vision HUD System (v11 - Motion Tracker)
+# 🎯 Cyber Vision HUD System v11 - Redmi Edition
 
-A Python-based real-time object detection, motion tracking, and HUD web interface designed to run locally (including Android/Termux environments via Python, OpenCV, and a local HTTP server).
+## 📝 বিবরণ (Description)
+**Cyber Vision HUD v11** হলো একটি অ্যাডভান্সড রিয়েল-টাইম মোশন ট্র্যাকিং ও অবজেক্ট ডিটেকশন সিস্টেম, যা বিশেষ করে **Redmi 13C** সহ অ্যান্ড্রয়েড টার্মাক্স (Termux) এবং OpenCV এনভায়রনমেন্টে সহজে রান করার জন্য অপ্টিমাইজ করা হয়েছে। এটি ফোনের ক্যামেরা ব্যবহার করে স্বয়ংক্রিয়ভাবে অবজেক্ট শনাক্ত করে, সাইজ অনুযায়ী বাউন্ডিং বক্স অ্যাডজাস্ট করে এবং মোশন ট্র্যাক করে টার্গেট লক করে রাখে।
 
-## 🚀 Features
-- **Real-Time Object Detection & Tracking:** Powered by MobileNet-SSD Caffe model and centroid tracking.
-- **Web-Based HUD UI:** Clean, futuristic cyber-style interface with live FPS counter, latency display, and bounding box overlays.
-- **Hardware Controls:** Switch between Front and Back cameras seamlessly, toggle Torch/Flash, and apply a Night Vision filter.
-- **Live Terminal Logging & Vault:** View structured log boxes or stream real-time JSON detection metrics directly in the terminal.
+---
+
+## ⚙️ এটি কী কী ইনপুট/ডেটা প্রসেস করতে পারে? (Supported Types)
+* **লাইভ ক্যামেরা স্ট্রিম:** ফ্রন্ট ও ব্যাক ক্যামেরা (`user` / `environment`) থেকে আসা ভিডিও ফ্রেম।
+* **ইমেজ ফরম্যাট:** Base64 এনকোডেড JPEG/PNG ইমেজ ডেটা।
+* **অবজেক্ট ক্যাটাগরি (VOC Classes):** মানুষ (Human/Person), গাড়ি (Car), বাইক (Motorcycle), পোষা প্রাণী (Cat/Dog), বাস, ট্রেন এবং আরও বেশ কিছু অবজেক্ট।
+* **আউটপুট ডেটা ফরম্যাট:** রিয়েল-টাইম JSON লগ এবং সেন্ট্রয়েড মোশন কোঅর্ডিনেট।
+
+---
+
+## 🛠️ টুলটির মূল কাজ কী? (Core Features & Functionality)
+1. **Adaptive Box Sizing:** অবজেক্টের দূরত্ব ও সাইজ ছোট/বড় হলে বক্সটি স্বয়ংক্রিয়ভাবে নিজের আকার পরিবর্তন করে নেয়।
+2. **Object Locking & Centroid Motion Tracking:** ক্যামেরা সরলে বা অবজেক্ট নড়াচড়া করলেও সেন্ট্রয়েড ট্র্যাকিংয়ের মাধ্যমে নির্দিষ্ট অবজেক্টে বক্সটি লক (`ID:#1`) হয়ে থাকে।
+3. **Range Distance Calculation:** অবজেক্টের সাইজ ফিল্টারিং করে `SHORT-RANGE`, `MID-RANGE`, এবং `LONG-RANGE` ক্যালকুলেট করা।
+4. **Hardware Control:** ওয়েব ইন্টারফেস থেকে সরাসরি ব্যাক ক্যামেরার ফ্ল্যাশলাইট (Torch) ও নাইট মোড ফিল্টার অন/অফ করার সুবিধা।
+5. **Real-time JSON Logger:** প্রতি ফ্রেমে অবজেক্ট লকিং ডেটা Vault-এ সেভ করা ও লাইভ স্ট্রিম দেখা।
+
+---
+
+## 🎛️ টুলটির মোডসমূহ (System Modes & CLI Options)
+টার্মিনাল চালুর পর মেনু ইন্টারফেসে নিচের মোডগুলো পাওয়া যায়:
+
+1. **Start Server & Launch HUD (`Option 1`):** 
+   * ব্যাকগ্রাউন্ডে পাইথন সার্ভার চালুর মাধ্যমে ব্রাউজারে সাইবার HUD ট্র্যাকিং মোড চালু করে।
+2. **Stop Background Server (`Option 2`):** 
+   * ব্যাকগ্রাউন্ডে রান হতে থাকা সার্ভার ও ক্যামেরা ফিড বন্ধ করে।
+3. **Live Real-Time JSON Stream (`Option 3`):** 
+   * ক্যামেরা দ্বারা ট্র্যাকিং ডেটা রিয়েল-টাইমে টার্মিনালে JSON আকারে লাইভ স্ট্রিম দেখায়।
+4. **Structured Box Log & Vault Viewer (`Option 4 & 5`):** 
+   * পূর্বে সেভ হওয়া ট্র্যাকিং ও ফেস লগের হিস্ট্রি ব্রাউজ করে।
+5. **Clear Vault (`Option 6`):** 
+   * পূর্বের সমস্ত ট্র্যাকিং ডেটা মুছে ফেলে এনভায়রনমেন্ট ফাঁকা করে।
 
 ---
 ## 📸 স্ক্রিনশটসমূহ (Screenshots)
