@@ -39,13 +39,13 @@ pip install opencv-python numpy
 4. python your_script_name.py
 
 ## 🕹️ Menu Options
-​[1] Start Server & Launch HUD: Launches the local HTTP server on port 8080 and automatically opens the browser interface.
-​[2] Stop Background Server: Shuts down the active web server.
-​[3] LIVE REAL-TIME JSON STREAM: Streams live detection JSON logs directly in your terminal.
-​[4] View Structured Box Log: Displays recent logs nicely formatted inside terminal box frames.
-​[5] View Raw JSON Vault: Dumps the entire contents of face_data.json.
-​[6] Clear Vault: Deletes the local log database.
-​[7] Exit: Safely stops the server and exits the program.
+[1] Start Server & Launch HUD: Launches the local HTTP server on port 8080 and automatically opens the browser interface.
+[2] Stop Background Server: Shuts down the active web server.
+[3] LIVE REAL-TIME JSON STREAM: Streams live detection JSON logs directly in your terminal.
+[4] View Structured Box Log: Displays recent logs nicely formatted inside terminal box frames.
+[5] View Raw JSON Vault: Dumps the entire contents of face_data.json.
+[6] Clear Vault: Deletes the local log database.
+[7] Exit: Safely stops the server and exits the program.
 ​
 ## 📱 Termux / Android Support
 ​If you are running this on an Android device via Termux, ensure you have granted storage permissions and have installed Python and OpenCV properly to leverage local camera streams and termux-open-url.
