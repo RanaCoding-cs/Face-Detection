@@ -614,8 +614,12 @@ def print_banner():
 {C.B_CYAN}║{C.RESET} {C.B_GREEN}     ██████╔╝███████╗   ██║   ███████╗╚██████╗   ██║        {C.B_CYAN}║{C.RESET}
 {C.B_CYAN}║{C.RESET} {C.B_GREEN}     ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝ ╚═════╝   ╚═╝        {C.B_CYAN}║{C.RESET}
 {C.B_CYAN}╠═════════════════════════════════════════════════════════════╣{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_YELLOW}[+] Version        :{C.RESET} {C.B_GREEN}face-detection_v3.5-MAX                {C.B_CYAN}║{C.RESET}
 {C.B_CYAN}║{C.RESET} {C.B_YELLOW}[+] Status         :{C.RESET} {server_status:<43}       {C.B_CYAN}║{C.RESET}
 {C.B_CYAN}║{C.RESET} {C.B_YELLOW}[+] Mode           :{C.RESET} {C.B_GREEN}Auto-Sized Object Lock & Motion Tracker{C.RESET}{C.B_CYAN}║{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_YELLOW}[+] Author         :{C.RESET} {C.B_YELLOW}RanaCoding-cs  | {C.B_GREEN} Neural-Gem{C.RESET}           {C.B_CYAN}║{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_YELLOW}[+] Developer      :{C.RESET} {C.B_MAGENTA}MD IMRAN HOSSEN |{C.B_YELLOW} WhatsApp: 01636690865{C.RESET}{C.B_CYAN}║{C.RESET}
+{C.B_CYAN}║{C.RESET} {C.B_YELLOW}[+] GitHub         :{C.RESET} {C.B_CYAN}https://github.com/RanaCoding-cs       {C.B_CYAN}║{C.RESET} 
 {C.B_CYAN}╚═════════════════════════════════════════════════════════════╝{C.RESET}
 """
   print(banner)
