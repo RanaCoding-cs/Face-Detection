@@ -32,13 +32,13 @@ Make sure you have Python installed along with the required libraries:
 pip install opencv-python numpy
 ```
 ​Note: You will need the MobileNet-SSD model files (MobileNetSSD_deploy.prototxt and MobileNetSSD_deploy.caffemodel) in the same directory for the AI detection engine to run.
-##📦 Installation & Setup
+## 📦 Installation & Setup
 1. Clone or copy the project script into your working directory.
 2. Ensure the model files are present.
 3. Run the script:
 4. python your_script_name.py
 
-##🕹️ Menu Options
+## 🕹️ Menu Options
 ​[1] Start Server & Launch HUD: Launches the local HTTP server on port 8080 and automatically opens the browser interface.
 ​[2] Stop Background Server: Shuts down the active web server.
 ​[3] LIVE REAL-TIME JSON STREAM: Streams live detection JSON logs directly in your terminal.
@@ -47,5 +47,5 @@ pip install opencv-python numpy
 ​[6] Clear Vault: Deletes the local log database.
 ​[7] Exit: Safely stops the server and exits the program.
 ​
-##📱 Termux / Android Support
+## 📱 Termux / Android Support
 ​If you are running this on an Android device via Termux, ensure you have granted storage permissions and have installed Python and OpenCV properly to leverage local camera streams and termux-open-url.
